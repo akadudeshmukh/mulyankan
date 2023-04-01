@@ -46,9 +46,9 @@ const Layout = ({ children, title = "" }: Props) => {
         <script src="js/main.js"></script>
       </Head>
       <header>
-        {/* <div className="container-fluid"> */}
+        <div className="container-fluid">
         <Header />
-        {/* </div> */}
+        </div>
       </header>
       <main>{children}</main>
       <footer></footer>
