@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../PageComponents/Navbar";
 import Topbar from "../PageComponents/Topbar";
-import handler from "@/pages/api/header";
 import React, { useEffect, useState } from "react";
 import { TopBar } from "@/data/header-data";
 
@@ -17,7 +16,7 @@ const Header = () => {
   //         setNavData(res);
   //       });
   //   }, []);
-  +useEffect(() => {
+  useEffect(() => {
     fetch("http://localhost:3000/api/header")
       .then((response) => response.json())
       .then((res) => {
