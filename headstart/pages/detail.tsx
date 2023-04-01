@@ -6,15 +6,14 @@ import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Detail() {
   return (
     <>
       {/* Image Carousel */}
-      {/* Feature Cards */}
-      {/* Category Tiles */}
-      {/* Trendy Products */}
-      {/* Email Subscription */}
-      {/* Brand Tiles */}
+      {/* Product Information */}
+      {/* Product Tabs */}
+      {/* Product Description */}      
+      {/* Suggested Products */}      
     </>
   )
 }
