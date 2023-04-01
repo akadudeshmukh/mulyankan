@@ -8,13 +8,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <>
+    <Layout title="Home-Barbarik">
       {/* Image Carousel */}
       {/* Feature Cards */}
       {/* Category Tiles */}
       {/* Trendy Products */}
       {/* Email Subscription */}
       {/* Brand Tiles */}
-    </>
+    </Layout>
   )
 }

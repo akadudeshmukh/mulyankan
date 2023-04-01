@@ -1,14 +1,14 @@
 import { url } from "inspector";
 import Image from "next/image";
 import Link from "next/link";
-import PageLayout from "@/components/layout";
+import Layout from "@/components/Layout/Layout";
 
 
 const Posts = () => {
     const data = {"id":1,"title":"His mother had always taught him","body":"His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto. He never looked down on those who were less fortunate or who had less money than him. But the stupidity of the group of people he was talking to made him change his mind.","userId":9,"tags":["history","american","crime"],"reactions":2};
     return(
 
-<PageLayout title="Hero">
+<Layout title="Hero">
 <div className="container-fluid">
     <div className="row bg-secondary py-2 px-xl-5">
         <div className="col-lg-6 d-none d-lg-block">
@@ -70,7 +70,7 @@ const Posts = () => {
         </div>
     </div>
 </div>
-</PageLayout>
+</Layout>
 
     );
 }
