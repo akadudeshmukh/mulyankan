@@ -12,8 +12,7 @@ export type TopBar = {
 }
 
 
-
-const data: TopBar = {
+export const topBarData: TopBar = {
     "infoLinks": [
         {
             "id": 1,
@@ -56,4 +55,28 @@ const data: TopBar = {
         }
     ]
 }
-export default data;
+
+export const navBarData = {
+    "navLinks": [
+        {
+            "id": 1,
+            "name": "Home",
+            "url": ""
+        },
+        {
+            "id": 2,
+            "name": "Shop",
+            "url": ""
+        },
+        {
+            "id": 3,
+            "name": "Shop Detail",
+            "url": ""
+        },
+        {
+            "id": 4,
+            "name": "Contact",
+            "url": ""
+        }
+    ]
+}

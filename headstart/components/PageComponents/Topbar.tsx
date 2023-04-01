@@ -1,4 +1,5 @@
 import { TopBar } from "@/data/header-data";
+import Link from "next/link";
 
 type TopBarProps = {
   data: TopBar;
@@ -22,9 +23,10 @@ const Topbar = (props: TopBarProps) => {
               Support
             </a> */}
             {props.data.infoLinks.map((info) => (
-              <a className="text-dark" href="">
+              <Link className="text-dark" href="">
                 {info.name}
-              </a>
+                <span className="text-muted px-2">|</span>
+              </Link>
             ))}
           </div>
         </div>
@@ -32,7 +34,7 @@ const Topbar = (props: TopBarProps) => {
         {/* social links */}
         <div className="col-lg-6 text-center text-lg-right">
           <div className="d-inline-flex align-items-center">
-            <a className="text-dark px-2" href="">
+            {/* <a className="text-dark px-2" href="">
               <i className="fab fa-facebook-f"></i>
             </a>
             <a className="text-dark px-2" href="">
@@ -46,7 +48,12 @@ const Topbar = (props: TopBarProps) => {
             </a>
             <a className="text-dark pl-2" href="">
               <i className="fab fa-youtube"></i>
-            </a>
+            </a> */}
+            {props.data.socialLinks.map((link) => (
+              <Link className="text-dark px-2" href="">
+                <i className={link.className}></i>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
