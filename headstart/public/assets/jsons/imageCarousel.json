@@ -1,0 +1,24 @@
+{
+          "items": {
+                "carousel": [
+                      {
+                            "id": 1,
+                            "title": "Fashionable Dress",
+                            "body": "100% Off Your First Order",
+                            "imageUrl": "/img/carousel-1.jpg",
+                            "linkUrl": "https://www.google.com"
+            },
+            {
+                            "id": 2,
+                            "title": "Reasonable Price",
+                            "body": "10% Off Your First Order",
+                            "imageUrl": "/img/carousel-2.jpg",
+                            "linkUrl": "https://www.bing.com"
+            }
+           
+            
+        ]
+    
+    }
+    
+}

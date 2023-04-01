@@ -5,12 +5,15 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { imageData } from "@/data/brandTile-data";
 import { BrandTile } from "@/components/PageComponents/BrandTile";
+import Carousel from "@/components/PageComponents/Carousel";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <Layout title="Home-Barbarik">
+      <Carousel />
       {/* Image Carousel */}
       {/* Feature Cards */}
       {/* Category Tiles */}
