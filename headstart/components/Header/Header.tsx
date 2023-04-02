@@ -9,7 +9,7 @@ const Header = () => {
   const [nav, setNav] = useState<TopBar | null>(null);
 
   //   useEffect(() => {
-  //     fetch("http://localhost:3000/api/header")
+  //     fetch(process.env.NEXT_PUBLIC_API_ENDPOINT+"/api/header")
   //       .then((response) => response.json())
   //       .then((res) => {
   //         console.log(res);
@@ -17,7 +17,7 @@ const Header = () => {
   //       });
   //   }, []);
   useEffect(() => {
-    fetch("http://localhost:3000/api/header")
+    fetch(process.env.NEXT_PUBLIC_API_ENDPOINT+"/api/header")
       .then((response) => response.json())
       .then((res) => {
         console.log(res);
