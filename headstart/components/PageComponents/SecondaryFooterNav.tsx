@@ -7,7 +7,7 @@ type SecondaryFooter = {
 const SecondaryFooterNav = (props: SecondaryFooter) => {
   return (
     <>
-      <h5 className="font-weight-bold text-dark mb-4">Trendy Link</h5>
+      {/* <h5 className="font-weight-bold text-dark mb-4">Trendy Link</h5> */}
       <div className="d-flex flex-column justify-content-start">
         {props.data.SecondaryFooterNav.map((nav) => (
           <>

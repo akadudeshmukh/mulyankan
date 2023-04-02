@@ -7,7 +7,7 @@ type PrimaryFooter = {
 const PrimaryFooterNav = (props: PrimaryFooter) => {
   return (
     <>
-      <h5 className="font-weight-bold text-dark mb-4">Quick Link</h5>
+      {/* <h5 className="font-weight-bold text-dark mb-4">Quick Link</h5> */}
       <div className="d-flex flex-column justify-content-start">
         {props.data.PrimaryFooterNav.map((nav) => (
           <>

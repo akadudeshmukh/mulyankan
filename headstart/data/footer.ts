@@ -80,7 +80,7 @@ const data: FooterData = {
 	],
 	"SecondaryFooterNav": [
 		{
-			"sectiontitle": "",
+			"sectiontitle": "Trendy Link",
 			"id": 1,
 			"link": "http://localhost:3000/",
 			"linktitle": "Home"
