@@ -49,31 +49,31 @@ const data: FooterData = {
 		{
 			"sectiontitle": "Quick Link",
 			"id": 1,
-			"link": "http://localhost:3000/",
+			"link": "/",
 			"linktitle": "Home"
 		},
 		{
 			"sectiontitle": "",
 			"id": 2,
-			"link": "http://localhost:3000/",
+			"link": "/shop",
 			"linktitle": "Our Shops"
 		},
 		{
 			"sectiontitle": "",
 			"id": 3,
-			"link": "http://localhost:3000/",
+			"link": "/product/5",
 			"linktitle": "shop Detail"
 		},
 		{
 			"sectiontitle": "",
 			"id": 4,
-			"link": "http://localhost:3000/",
+			"link": "/shopping-cart",
 			"linktitle": "Shopping Cart"
 		},
 		{
 			"sectiontitle": "",
 			"id": 5,
-			"link": "http://localhost:3000/",
+			"link": "/checkout",
 			"linktitle": "Checkout"
 		}
 
@@ -82,31 +82,31 @@ const data: FooterData = {
 		{
 			"sectiontitle": "Trendy Link",
 			"id": 1,
-			"link": "http://localhost:3000/",
+			"link": "/",
 			"linktitle": "Home"
 		},
 		{
 			"sectiontitle": "",
 			"id": 2,
-			"link": "http://localhost:3000/",
+			"link": "/shop",
 			"linktitle": "Our Shops"
 		},
 		{
 			"sectiontitle": "",
 			"id": 3,
-			"link": "http://localhost:3000/",
+			"link": "/product/5",
 			"linktitle": "shop Detail"
 		},
 		{
 			"sectiontitle": "",
 			"id": 4,
-			"link": "http://localhost:3000/",
+			"link": "/shopping-cart",
 			"linktitle": "Shopping Cart"
 		},
 		{
 			"sectiontitle": "",
 			"id": 5,
-			"link": "http://localhost:3000/",
+			"link": "/checkout",
 			"linktitle": "Checkout"
 		}
 	]

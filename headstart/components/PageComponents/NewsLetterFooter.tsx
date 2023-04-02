@@ -1,21 +1,22 @@
 import Image from "next/image";
+import { useState } from "react";
 
-export default function NewsLetterFooter() {
+const NewsLetterFooterForm = ({ success }: { success: () => void }) => {
   const handleSubmit = async (event: any) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault();
 
     // Get data from the form.
     const data = {
-      first: event.target.first.value,
-      last: event.target.last.value,
+      name: event.target.name.value,
+      email: event.target.email.value,
     };
 
     // Send the data to the server in JSON format.
     const JSONdata = JSON.stringify(data);
 
     // API endpoint where we send form data.
-    const endpoint = "/api/form";
+    const endpoint = "https://sample-apis.azurewebsites.net/api/open/subscribe";
 
     // Form the request for sending data to the server.
     const options = {
@@ -34,28 +35,32 @@ export default function NewsLetterFooter() {
     console.log("bodyresponse: ", response);
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
-    const result = await response.json();
-    alert(`Is this your full name: ${result.data}`);
+    //const result = await response.json();
+    if (response.status === 201) {
+      success();
+    }
   };
 
   return (
     <>
       <h5 className="font-weight-bold text-dark mb-4">Newsletter</h5>
-      <form action="">
+      <form action="#" onSubmit={handleSubmit}>
         <div className="form-group">
           <input
+            id="name"
             className="form-control border-0 py-4"
             placeholder="Your Name"
-            type={"text"}
+            type="name"
             required
             name="Your Name"
           />
         </div>
         <div className="form-group">
           <input
+            id="email"
             className="form-control border-0 py-4"
             placeholder="Your Email"
-            type={"text"}
+            type="emai"
             required
             name="Your Email"
           />
@@ -81,4 +86,24 @@ export default function NewsLetterFooter() {
       </form> */}
     </>
   );
-}
+};
+const NewsLetter = () => {
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  return (
+    <>
+      {!formSubmitted && (
+        <NewsLetterFooterForm
+          success={() => {
+            setFormSubmitted(true);
+          }}
+        ></NewsLetterFooterForm>
+      )}
+      {formSubmitted && (
+        <h5 className="font-weight-bold text-dark mb-4">
+          Thanks for submitting
+        </h5>
+      )}
+    </>
+  );
+};
+export default NewsLetter;

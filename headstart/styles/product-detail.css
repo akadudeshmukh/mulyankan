@@ -1,0 +1,11 @@
+.specifications-content {
+    font-size: .75rem;
+    line-height: 1.5;
+    font-weight: 500;    
+}
+.specifications-content table th, .specifications-content table td {
+    padding: 4px 0;
+}
+.specifications-content table th {
+    padding-right: 40px;
+}
