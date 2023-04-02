@@ -9,7 +9,7 @@ export default async function handler(
 ) {
   try{
     // var apiResult = await 
-    // fetch('http://localhost:3000/jsons/headerData.json');
+    // fetch(process.env.NEXT_PUBLIC_API_ENDPOINT+'/jsons/headerData.json');
     // var json = await apiResult.json();
     // console.log(json);
     res.status(200).json(topBarData);

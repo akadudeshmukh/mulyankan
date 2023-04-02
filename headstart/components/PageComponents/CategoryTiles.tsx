@@ -7,7 +7,7 @@ import CategoryCard from './category-card';
 export default function CategoryTiles(){
     const [catagory, setCatagory] = useState([]);
     useEffect(() =>{
-        fetch('http://localhost:3000/api/category')
+        fetch(process.env.NEXT_PUBLIC_API_ENDPOINT+'/api/category')
         .then(response => response.json())
         .then(res => setCatagory(res))
     }, [])
