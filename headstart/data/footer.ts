@@ -61,7 +61,7 @@ const data: FooterData = {
 		{
 			"sectiontitle": "",
 			"id": 3,
-			"link": "/detail",
+			"link": "/product/5",
 			"linktitle": "shop Detail"
 		},
 		{
@@ -94,7 +94,7 @@ const data: FooterData = {
 		{
 			"sectiontitle": "",
 			"id": 3,
-			"link": "/detail",
+			"link": "/product/5",
 			"linktitle": "shop Detail"
 		},
 		{
