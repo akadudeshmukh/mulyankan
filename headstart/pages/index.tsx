@@ -10,23 +10,23 @@ import Link from "next/link";
 import FeaturedCards from "@/components/PageComponents/FeaturedCards";
 import CategoryTiles from "@/components/PageComponents/CategoryTiles";
 import TrandyProductsPost from "@/components/PageComponents/TrandyProducts_d";
-
+import Subscription from '@/components/PageComponents/EmailSubscription'
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <Layout title="Home-Barbarik">
-      <Carousel />
-      <FeaturedCards />
-      <CategoryTiles />
-      {/* Image Carousel */}
-      {/* Feature Cards */}
-      {/* Category Tiles */}
-      {/* Trendy Products */}
-      <TrandyProductsPost></TrandyProductsPost>
-      {/* Email Subscription */}
-      {/* Brand Tiles */}
-      <BrandTile data={imageData} />
-    </Layout>
+    <Carousel />
+    <FeaturedCards />
+    <CategoryTiles />
+    {/* Image Carousel */}
+    {/* Feature Cards */}
+    {/* Category Tiles */}
+    {/* Trendy Products */}
+    <TrandyProductsPost></TrandyProductsPost>
+    <Subscription></Subscription>
+    {/* Brand Tiles */}
+    <BrandTile data={imageData} />
+  </Layout>
   );
 }
