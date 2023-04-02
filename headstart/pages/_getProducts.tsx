@@ -12,7 +12,7 @@ const PostProdutcs = (props: any) => {
 }
 
 export async function getStaticProps(){
-  const resp = await fetch('http://localhost:3000/api/product');
+  const resp = await fetch(process.env.NEXT_PUBLIC_API_ENDPOINT+'/api/product');
   var json = await resp.json();
   console.log(json);
   return {
