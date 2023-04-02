@@ -53,8 +53,11 @@ const SubscriptionForm = ({success}:{success:(email:string)=>void}) =>{
     )
 }
 
-
-const Subscription = ()=>{
+type SubscriptionProps={
+    title:string,
+    desc:string
+}
+const Subscription = (props:SubscriptionProps)=>{
     const [formSubmitted,setFormSubmitted]=useState(false)
     const [emailadd,setemailadd]=useState("")
     return(
@@ -70,8 +73,8 @@ const Subscription = ()=>{
             <div className="row justify-content-md-center py-5 px-xl-5">
                 <div className="col-md-6 col-12 py-5">
                     <div className="text-center mb-2 pb-2">
-                        <h2 className="section-title px-5 mb-3"><span className="bg-secondary px-2">Stay Updated</span></h2>
-                        <p>Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore.</p>
+                        <h2 className="section-title px-5 mb-3"><span className="bg-secondary px-2">{props.title}</span></h2>
+                        <p>{props.desc}</p>
                     </div>
                     <div className="text-center mb-2 pb-2">                      
                         {/* <p>You have subscribed!</p> */}
