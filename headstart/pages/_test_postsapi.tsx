@@ -1,5 +1,5 @@
 import PageLayout from "@/components/layout";
-import PostComponent from "@/components/posts";
+import PostComponent from "@/components/testposts";
 const PostProps = (props: any) => {
   const resp = props.posts;
   console.log(resp);

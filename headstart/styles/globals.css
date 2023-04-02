@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('../public/lib/owlcarousel/assets/owl.carousel.min.css');
+@import url('../public/css/style.css');
 
 :root {
   --max-width: 1100px;
