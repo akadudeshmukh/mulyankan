@@ -9,6 +9,7 @@ import Carousel from "@/components/PageComponents/Carousel";
 import Link from "next/link";
 import FeaturedCards from "@/components/PageComponents/FeaturedCards";
 import CategoryTiles from "@/components/PageComponents/CategoryTiles";
+import TrandyProductsPost from "@/components/PageComponents/TrandyProducts_d";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
       {/* Feature Cards */}
       {/* Category Tiles */}
       {/* Trendy Products */}
+      <TrandyProductsPost></TrandyProductsPost>
       {/* Email Subscription */}
       {/* Brand Tiles */}
       <BrandTile data={imageData} />
