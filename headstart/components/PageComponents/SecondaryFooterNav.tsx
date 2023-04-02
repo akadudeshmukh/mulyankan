@@ -7,37 +7,46 @@ type SecondaryFooter = {
 const SecondaryFooterNav = (props: SecondaryFooter) => {
   return (
     <>
-      <h5 className="font-weight-bold text-dark mb-4">
-        {props.data.SecondaryFooterNav.sectiontitle}
-      </h5>
+      <h5 className="font-weight-bold text-dark mb-4">Trendy Link</h5>
       <div className="d-flex flex-column justify-content-start">
-        <Link
+        {props.data.SecondaryFooterNav.map((nav) => (
+          <>
+            <h5 className="font-weight-bold text-dark mb-4">
+              {nav.sectiontitle}
+            </h5>
+            <Link className="text-dark mb-2" href={`${nav.link}`}>
+              <i className="fa fa-angle-right mr-2"></i>
+              {nav.linktitle}
+            </Link>
+          </>
+        ))}
+        {/* <Link
           className="text-dark mb-2"
-          href={`${props.data.SecondaryFooterNav.Home.link}`}
+          href={`${props.data.PrimaryFooterNav.Home.link}`}
         >
           <i className="fa fa-angle-right mr-2"></i>
-          {props.data.SecondaryFooterNav.Home.linktitle}
+          {props.data.PrimaryFooterNav.Home.linktitle}
         </Link>
         <Link
           className="text-dark mb-2"
-          href={`${props.data.SecondaryFooterNav.shops.link}`}
+          href={`${props.data.PrimaryFooterNav.shops.link}`}
         >
           <i className="fa fa-angle-right mr-2"></i>
-          {props.data.SecondaryFooterNav.shops.linktitle}
+          {props.data.PrimaryFooterNav.shops.linktitle}
         </Link>
         <Link
           className="text-dark mb-2"
-          href={`${props.data.SecondaryFooterNav.shopdetail.link}`}
+          href={`${props.data.PrimaryFooterNav.shopdetail.link}`}
         >
           <i className="fa fa-angle-right mr-2"></i>
-          {props.data.SecondaryFooterNav.shopdetail.linktitle}
+          {props.data.PrimaryFooterNav.shopdetail.linktitle}
         </Link>
         <Link
           className="text-dark mb-2"
-          href={`${props.data.SecondaryFooterNav.shoppingcart.link}`}
+          href={`${props.data.PrimaryFooterNav.shoppingcart.link}`}
         >
           <i className="fa fa-angle-right mr-2"></i>
-          {props.data.SecondaryFooterNav.shoppingcart.linktitle}
+          {props.data.PrimaryFooterNav.shoppingcart.linktitle}
         </Link>
         <Link
           className="text-dark mb-2"
@@ -52,7 +61,7 @@ const SecondaryFooterNav = (props: SecondaryFooter) => {
         >
           <i className="fa fa-angle-right mr-2"></i>{" "}
           {props.data.PrimaryFooterNav.Contactus.linktitle}
-        </Link>
+        </Link> */}
       </div>
     </>
   );

@@ -4,28 +4,11 @@ type ContactInfoFooter = {
 	mail: string;
 	phone: string;
 }
-type PrimaryFooterNav = {
-	sectiontitle: string;
-	Home: NavAttribute
-	shops: NavAttribute
-	shopdetail: NavAttribute
-	shoppingcart: NavAttribute
-	Checkout: NavAttribute
-	Contactus: NavAttribute
-}
 type NavAttribute = {
+	sectiontitle: string,
 	id: number,
 	link: string,
 	linktitle: string
-}
-type SecondaryFooterNav = PrimaryFooterNav & {
-	sectiontitle: string;
-	Home: NavAttribute
-	shops: NavAttribute
-	shopdetail: NavAttribute
-	shoppingcart: NavAttribute
-	Checkout: NavAttribute
-	Contactus: NavAttribute
 }
 type NewsLetterFooter = {
 	sectiontitle: string;
@@ -47,8 +30,8 @@ type LegalText = {
 }
 export type FooterData = {
 	ContactInfoFooter: ContactInfoFooter
-	PrimaryFooterNav: PrimaryFooterNav
-	SecondaryFooterNav: SecondaryFooterNav
+	PrimaryFooterNav: Array<NavAttribute>
+	SecondaryFooterNav: Array<NavAttribute>
 	NewsLetterFooter: NewsLetterFooter
 	LegalLinkFooter: LegalLinkFooter
 }
@@ -60,101 +43,73 @@ const data: FooterData = {
 		"address": "123 Street, New York, USA",
 		"mail": "test@test.com",
 		"phone": "+012 345 67890"
-	}
-	,
-	"PrimaryFooterNav":
-	{
-		"sectiontitle": "Quick Links",
-		"Home":
+	},
+	"PrimaryFooterNav": [
+
 		{
+			"sectiontitle": "Quick Link",
 			"id": 1,
 			"link": "http://localhost:3000/",
 			"linktitle": "Home"
-		}
-		,
-		"shops":
+		},
 		{
+			"sectiontitle": "",
 			"id": 2,
 			"link": "http://localhost:3000/",
 			"linktitle": "Our Shops"
-		}
-		,
-		"shopdetail":
+		},
 		{
+			"sectiontitle": "",
 			"id": 3,
 			"link": "http://localhost:3000/",
 			"linktitle": "shop Detail"
-		}
-		,
-		"shoppingcart":
+		},
 		{
+			"sectiontitle": "",
 			"id": 4,
 			"link": "http://localhost:3000/",
 			"linktitle": "Shopping Cart"
-		}
-		,
-		"Checkout":
+		},
 		{
+			"sectiontitle": "",
 			"id": 5,
 			"link": "http://localhost:3000/",
 			"linktitle": "Checkout"
 		}
-		,
-		"Contactus":
-		{
-			"id": 6,
-			"link": "http://localhost:3000/",
-			"linktitle": "Contactus"
-		}
 
-	}
-	,
-	"SecondaryFooterNav":
-	{
-		"sectiontitle": "Trendy Link",
-		"Home":
+	],
+	"SecondaryFooterNav": [
 		{
+			"sectiontitle": "",
 			"id": 1,
 			"link": "http://localhost:3000/",
 			"linktitle": "Home"
-		}
-		,
-		"shops":
+		},
 		{
+			"sectiontitle": "",
 			"id": 2,
 			"link": "http://localhost:3000/",
 			"linktitle": "Our Shops"
-		}
-		,
-		"shopdetail":
+		},
 		{
+			"sectiontitle": "",
 			"id": 3,
 			"link": "http://localhost:3000/",
 			"linktitle": "shop Detail"
-		}
-		,
-		"shoppingcart":
+		},
 		{
+			"sectiontitle": "",
 			"id": 4,
 			"link": "http://localhost:3000/",
 			"linktitle": "Shopping Cart"
-		}
-		,
-		"Checkout":
+		},
 		{
+			"sectiontitle": "",
 			"id": 5,
 			"link": "http://localhost:3000/",
 			"linktitle": "Checkout"
 		}
-		,
-		"Contactus":
-		{
-			"id": 6,
-			"link": "http://localhost:3000/",
-			"linktitle": "Contactus"
-		}
-
-	}
+	]
 	,
 	"NewsLetterFooter":
 	{

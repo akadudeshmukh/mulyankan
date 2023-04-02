@@ -7,11 +7,20 @@ type PrimaryFooter = {
 const PrimaryFooterNav = (props: PrimaryFooter) => {
   return (
     <>
-      <h5 className="font-weight-bold text-dark mb-4">
-        {props.data.PrimaryFooterNav.sectiontitle}
-      </h5>
+      <h5 className="font-weight-bold text-dark mb-4">Quick Link</h5>
       <div className="d-flex flex-column justify-content-start">
-        <Link
+        {props.data.PrimaryFooterNav.map((nav) => (
+          <>
+            <h5 className="font-weight-bold text-dark mb-4">
+              {nav.sectiontitle}
+            </h5>
+            <Link className="text-dark mb-2" href={`${nav.link}`}>
+              <i className="fa fa-angle-right mr-2"></i>
+              {nav.linktitle}
+            </Link>
+          </>
+        ))}
+        {/* <Link
           className="text-dark mb-2"
           href={`${props.data.PrimaryFooterNav.Home.link}`}
         >
@@ -52,7 +61,7 @@ const PrimaryFooterNav = (props: PrimaryFooter) => {
         >
           <i className="fa fa-angle-right mr-2"></i>{" "}
           {props.data.PrimaryFooterNav.Contactus.linktitle}
-        </Link>
+        </Link> */}
       </div>
     </>
   );
