@@ -34,7 +34,7 @@ const Navbar = () => {
                   <Link href="/shop" className="nav-item nav-link">
                     Shop
                   </Link>
-                  <Link href="/detail" className="nav-item nav-link">
+                  <Link href="/product/7" className="nav-item nav-link">
                     Shop Detail
                   </Link>
                   <Link href="/shopping-cart" className="nav-item nav-link">
