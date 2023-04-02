@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FooterData } from "@/assets/typescript/footer";
+import { FooterData } from "@/data/footer";
 type SecondaryFooter = {
   data: FooterData;
 };

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FooterData } from "@/assets/typescript/footer";
+import { FooterData } from "@/data/footer";
 import Link from "next/link";
 
 type FooterInfo = {

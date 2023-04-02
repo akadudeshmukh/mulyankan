@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import data from '@/assets/typescript/footer';
+import data from '@/data/footer';
 
 export default async function handler(
     req: NextApiRequest,

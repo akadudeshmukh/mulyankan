@@ -5,7 +5,7 @@ import NewsLetterFooter from "../PageComponents/NewsLetterFooter";
 import LegalLinkFooter from "../PageComponents/LegalLinkFooter";
 import ContactInfoFooter from "../PageComponents/ContactInfoFooter";
 import React, { useEffect, useState } from "react";
-import { FooterData } from "@/assets/typescript/footer";
+import { FooterData } from "@/data/footer";
 
 export default function Footer() {
   const [data, setFooterData] = useState<FooterData | null>(null);
