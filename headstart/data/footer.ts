@@ -67,7 +67,7 @@ const data: FooterData = {
 		{
 			"sectiontitle": "",
 			"id": 4,
-			"link": "/cart",
+			"link": "/shopping-cart",
 			"linktitle": "Shopping Cart"
 		},
 		{
@@ -100,7 +100,7 @@ const data: FooterData = {
 		{
 			"sectiontitle": "",
 			"id": 4,
-			"link": "/cart",
+			"link": "/shopping-cart",
 			"linktitle": "Shopping Cart"
 		},
 		{
