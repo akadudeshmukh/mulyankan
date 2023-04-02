@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React, { ReactNode } from "react";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 type Props = {
   title: string | undefined;
@@ -47,10 +48,11 @@ const Layout = ({ children, title = "" }: Props) => {
       </Head>
       <header>
         <div className="container-fluid">
-        <Header />
+          <Header />
         </div>
       </header>
       <main>{children}</main>
+      <Footer></Footer>
       <footer></footer>
     </>
   );

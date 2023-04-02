@@ -1,13 +1,13 @@
-import PageLayout from "@/components/layout";
+import Layout from "@/components/Layout/Layout";
 import PostComponent from "@/components/testposts";
 const PostProps = (props: any) => {
   const resp = props.posts;
   console.log(resp);
   return (
-    <PageLayout title="API Data">
+    <Layout title="API Data">
       <PostComponent posts={resp} />
       <PostComponent posts={resp} />
-    </PageLayout>    
+    </Layout>    
   );
 }
 
@@ -21,7 +21,7 @@ export async function loadPosts() {
 
 
 export async function getStaticProps(){
-  const resp = await fetch('http://localhost:3000/api/posts');
+  const resp = await fetch(process.env.NEXT_PUBLIC_API_ENDPOINT+'/api/posts');
   var json = await resp.json();
   console.log(json);
   return {

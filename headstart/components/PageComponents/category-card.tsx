@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { useEffect, useState } from "react"
 
 const CategoryCard = ({category}: {category: string}) => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState<any>([])
     let imageUrl;
     useEffect(() => {
-        fetch(`http://localhost:3000/api/category?category=${category}`)
+        fetch(process.env.NEXT_PUBLIC_API_ENDPOINT+`/api/category?category=${category}`)
         .then(response => response.json())
         .then(res => setData(res))
     }, [])
