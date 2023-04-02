@@ -44,13 +44,11 @@ const Layout = ({ children, title = "" }: Props) => {
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
         <script src="js/main.js"></script>
-    </Head>
-    <header></header>
-    <main>                
-        {children}            
-    </main>
-    <Footer></Footer>
-    <footer></footer>
+      </Head>
+      <header></header>
+      <main>{children}</main>
+      <Footer></Footer>
+      <footer></footer>
     </>
   );
 };
