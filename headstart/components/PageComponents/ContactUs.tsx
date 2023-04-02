@@ -8,17 +8,19 @@ const ContactUsForm = ({ success }: { success: () => void }) => {
 
     // Get data from the form.
     const data = {
-      name: event.target.name.value,
+      full_name: event.target.full_name.value,
       email: event.target.email.value,
-      subject: event.target.subject.value,
+      topic: event.target.topic.value,
       message: event.target.message.value,
+      phone_number: event.target.phone_number.value,
     };
 
     // Send the data to the server in JSON format.
     const JSONdata = JSON.stringify(data);
 
     // API endpoint where we send form data.
-    const endpoint = "https://sample-apis.azurewebsites.net/api/open/subscribe";
+    const endpoint =
+      "https://sample-apis.azurewebsites.net/api/open/contact-us";
 
     // Form the request for sending data to the server.
     const options = {
@@ -61,7 +63,7 @@ const ContactUsForm = ({ success }: { success: () => void }) => {
             >
               <div className="control-group">
                 <input
-                  id="name"
+                  id="full_name"
                   className="form-control"
                   placeholder="Your Name"
                   type="text"
@@ -85,7 +87,19 @@ const ContactUsForm = ({ success }: { success: () => void }) => {
               </div>
               <div className="control-group">
                 <input
-                  id="subject"
+                  id="phone_number"
+                  className="form-control"
+                  placeholder="Your phone number"
+                  type="phone number"
+                  required
+                  name="Your phone number"
+                />
+
+                <p className="help-block text-danger"></p>
+              </div>
+              <div className="control-group">
+                <input
+                  id="topic"
                   className="form-control"
                   placeholder="subject"
                   type="text"
