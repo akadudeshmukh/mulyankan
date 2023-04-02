@@ -28,7 +28,7 @@ const Navbar = () => {
                 id="navbarCollapse"
               >
                 <div className="navbar-nav mr-auto py-0">
-                  <Link href="index.html" className="nav-item nav-link active">
+                  <Link href="/" className="nav-item nav-link active">
                     Home
                   </Link>
                   <Link href="/shop" className="nav-item nav-link">
@@ -46,15 +46,15 @@ const Navbar = () => {
                       Pages
                     </Link>
                     <div className="dropdown-menu rounded-0 m-0">
-                      <Link href="cart.html" className="dropdown-item">
+                      <Link href="/cart" className="dropdown-item">
                         Shopping Cart
                       </Link>
-                      <Link href="checkout.html" className="dropdown-item">
+                      <Link href="/checkout" className="dropdown-item">
                         Checkout
                       </Link>
                     </div>
                   </div>
-                  <Link href="contact.html" className="nav-item nav-link">
+                  <Link href="/contact" className="nav-item nav-link">
                     Contact
                   </Link>
                 </div>
