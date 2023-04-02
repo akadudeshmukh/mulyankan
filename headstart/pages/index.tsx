@@ -24,7 +24,7 @@ export default function Home() {
     {/* Category Tiles */}
     {/* Trendy Products */}
     <TrandyProductsPost></TrandyProductsPost>
-    <Subscription></Subscription>
+    <Subscription title="Stay Updated" desc="Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore."></Subscription>
     {/* Brand Tiles */}
     <BrandTile data={imageData} />
   </Layout>

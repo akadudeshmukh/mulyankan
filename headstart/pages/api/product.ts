@@ -7,8 +7,8 @@ type Response = {
 export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse
-){
-    const data = await fetch('https://dummyjson.com/products?limit=8&skip=0');
+) {
+    const data = await fetch('https://dummyjson.com/products');
     const response = await data.json();
     res.status(200).json(response);
 }
