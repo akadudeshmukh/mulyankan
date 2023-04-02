@@ -1,5 +1,3 @@
-import Layout from "../Layout/Layout";
-
 import useSWR from 'swr';
 
  const fetcher = (url:string) => fetch(url).then((res) => res.json());
@@ -13,7 +11,7 @@ export default function TrandyProductsPost(){
   if (!data) return <div>Loading...</div>;
 
     return (
-<Layout title="Trandy Products">
+
     <div className="container-fluid pt-5">
         <div className="text-center mb-4">
             <h2 className="section-title px-5"><span className="px-2">Trandy Products</span></h2>
@@ -61,7 +59,7 @@ export default function TrandyProductsPost(){
             }  
         </div>
     </div>
-</Layout>
+
 );
 }
 
