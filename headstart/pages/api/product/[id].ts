@@ -4,11 +4,11 @@ import { Product } from '@/types/product';
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Product>
-) {   
-  let product: Product = {};  
-  try{            
+) {
+  let product: Product = {};
+  try {
     var response = await fetch('https://dummyjson.com/products/' + req.query.id);
-    var json = await response.json();       
+    var json = await response.json();
     product = {
       id: json.id,
       title: json.title,
@@ -21,10 +21,10 @@ export default async function handler(
       category: json.category,
       thumbnail: json.thumbnail,
       images: json.images
-    };        
+    };
     res.status(200).json(product);
-  }catch(error){
-    console.log(error);  
-    res.status(200).json(product);  
-  }  
+  } catch (error) {
+    console.log(error);
+    res.status(200).json(product);
+  }
 }
