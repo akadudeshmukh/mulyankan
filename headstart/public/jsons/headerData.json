@@ -1,0 +1,45 @@
+{
+    "topbar": {
+        "infolinks": [
+            {
+                "id": 1,
+                "name": "FAQs"
+            },
+            {
+                "id": 2,
+                "name": "Help"
+            },
+            {
+                "id": 3,
+                "name": "Support"
+            }
+        ],
+        "sociallinks": [
+            {
+                "id": 1,
+                "name": "Facebook",
+                "classname": "fab fa-facebook-f"
+            },
+            {
+                "id": 2,
+                "name": "Twitter",
+                "classname": "fab fa-twitter"
+            },
+            {
+                "id": 3,
+                "name": "Linkedin",
+                "classname": "fab fa-linkedin-in"
+            },
+            {
+                "id":4,
+                "name": "Instagram",
+                "classname": "fab fa-instagram"
+            },
+            {
+                "id":5,
+                "name": "Youtube",
+                "classname": "fab fa-youtube"
+            }
+        ]
+    }
+}
