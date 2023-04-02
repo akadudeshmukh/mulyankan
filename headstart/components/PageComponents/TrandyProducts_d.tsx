@@ -18,7 +18,7 @@ export default function TrandyProductsPost(){
         <div className="text-center mb-4">
             <h2 className="section-title px-5"><span className="px-2">Trandy Products</span></h2>
         </div>
-        <span>Name: {data.products[0].title}</span>
+        {/* <span>Name: {data.products[0].title}</span>
         <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
                 <div className="card product-item border-0 mb-4">
                     <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
@@ -35,7 +35,7 @@ export default function TrandyProductsPost(){
                         <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         <div className="row px-xl-5 pb-3">
         {
             data.products.map((product: any, index: number) => { 

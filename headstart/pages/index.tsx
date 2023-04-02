@@ -1,4 +1,6 @@
 import Layout from '@/components/Layout/Layout'
+import TrandyProductsPost from '@/components/PageComponents/TrandyProducts_d'
+// import TrandyProducts from '@/components/PageComponents/TrandyProducts'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
@@ -13,6 +15,7 @@ export default function Home() {
       {/* Feature Cards */}
       {/* Category Tiles */}
       {/* Trendy Products */}
+      <TrandyProductsPost></TrandyProductsPost>
       {/* Email Subscription */}
       {/* Brand Tiles */}
     </Layout>
