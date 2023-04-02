@@ -11,7 +11,7 @@ export default function Footer() {
   const [data, setFooterData] = useState<FooterData | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/footer")
+    fetch(process.env.NEXT_PUBLIC_API_ENDPOINT + "/api/footer")
       .then((response) => response.json())
       .then((res) => {
         console.log(res);
