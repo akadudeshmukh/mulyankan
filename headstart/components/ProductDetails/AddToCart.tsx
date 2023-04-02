@@ -28,7 +28,7 @@ const AddToCart = (props: Props) => {
             id: event.target.id.value,
             quantity: event.target.quantity.value
         };          
-        const response = await fetch('http://localhost:3000/api/cart',
+        const response = await fetch(process.env.NEXT_PUBLIC_API_ENDPOINT+'/api/cart',
         {
             method: 'POST',
             headers:{
