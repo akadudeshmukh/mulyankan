@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { ReactNode } from "react";
+import Header from "../Header/Header";
 
 type Props = {
   title: string | undefined;
@@ -44,7 +45,11 @@ const Layout = ({ children, title = "" }: Props) => {
         <script src="mail/contact.js"></script>
         <script src="js/main.js"></script>
       </Head>
-      <header></header>
+      <header>
+        <div className="container-fluid">
+        <Header />
+        </div>
+      </header>
       <main>{children}</main>
       <footer></footer>
     </>
