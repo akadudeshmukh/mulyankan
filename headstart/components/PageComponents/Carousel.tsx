@@ -52,7 +52,7 @@ import useSWR from 'swr';
 
 
 //#region JsonCarousel
-//as we can't set the "active" class to first banner - this code is commented.
+
 export async function fetcher() {
     const response = await fetch('http://localhost:3000/api/imgCarousel')
     const data = await response.json();
