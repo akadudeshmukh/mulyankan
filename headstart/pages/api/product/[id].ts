@@ -4,7 +4,7 @@ import { Product } from '@/types/product';
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Product>
-) {
+) {   
   let product: Product = {};  
   try{            
     var response = await fetch('https://dummyjson.com/products/' + req.query.id);

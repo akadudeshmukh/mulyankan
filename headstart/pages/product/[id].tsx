@@ -1,3 +1,4 @@
+import AddToCart from '@/components/ProductDetails/AddToCart'
 import Image from 'next/image'
 import { Product } from '@/types/product'
 import Layout from '@/components/Layout/Layout'
@@ -33,7 +34,8 @@ export default function ProductDetails(props: Props) {
             <ProductImageCarousel images={images}/>                    
           </div>
           <div className='col-lg-7 pb-5'>
-            <ProductInformation product={props.product} productDescription={props.shortDescription}/>              
+            <ProductInformation product={props.product} productDescription={props.shortDescription}/> 
+            <AddToCart product={props.product}></AddToCart>         
           </div>
         </div>
         <div className='row px-xl-5'>
