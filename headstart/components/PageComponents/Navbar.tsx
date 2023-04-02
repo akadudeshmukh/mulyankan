@@ -37,23 +37,10 @@ const Navbar = () => {
                   <Link href="/detail" className="nav-item nav-link">
                     Shop Detail
                   </Link>
-                  <div className="nav-item dropdown">
-                    <Link
-                      href="#"
-                      className="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                    >
-                      Pages
-                    </Link>
-                    <div className="dropdown-menu rounded-0 m-0">
-                      <Link href="/cart" className="dropdown-item">
-                        Shopping Cart
-                      </Link>
-                      <Link href="/checkout" className="dropdown-item">
-                        Checkout
-                      </Link>
-                    </div>
-                  </div>
+                  <Link href="/shopping-cart" className="nav-item nav-link">
+                    Shopping Cart
+                  </Link>
+
                   <Link href="/contact" className="nav-item nav-link">
                     Contact
                   </Link>
