@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <>
@@ -5,14 +7,14 @@ const Navbar = () => {
         <div className="row border-top px-xl-5">
           <div className="col-lg-9">
             <nav className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
-              <a href="" className="text-decoration-none d-block d-lg-none">
+              <Link href="" className="text-decoration-none d-block d-lg-none">
                 <h1 className="m-0 display-5 font-weight-semi-bold">
                   <span className="text-primary font-weight-bold border px-3 mr-1">
                     E
                   </span>
                   Shopper
                 </h1>
-              </a>
+              </Link>
               <button
                 type="button"
                 className="navbar-toggler"
@@ -26,43 +28,43 @@ const Navbar = () => {
                 id="navbarCollapse"
               >
                 <div className="navbar-nav mr-auto py-0">
-                  <a href="index.html" className="nav-item nav-link active">
+                  <Link href="index.html" className="nav-item nav-link active">
                     Home
-                  </a>
-                  <a href="shop.html" className="nav-item nav-link">
+                  </Link>
+                  <Link href="/shop" className="nav-item nav-link">
                     Shop
-                  </a>
-                  <a href="detail.html" className="nav-item nav-link">
+                  </Link>
+                  <Link href="/detail" className="nav-item nav-link">
                     Shop Detail
-                  </a>
+                  </Link>
                   <div className="nav-item dropdown">
-                    <a
+                    <Link
                       href="#"
                       className="nav-link dropdown-toggle"
                       data-toggle="dropdown"
                     >
                       Pages
-                    </a>
+                    </Link>
                     <div className="dropdown-menu rounded-0 m-0">
-                      <a href="cart.html" className="dropdown-item">
+                      <Link href="cart.html" className="dropdown-item">
                         Shopping Cart
-                      </a>
-                      <a href="checkout.html" className="dropdown-item">
+                      </Link>
+                      <Link href="checkout.html" className="dropdown-item">
                         Checkout
-                      </a>
+                      </Link>
                     </div>
                   </div>
-                  <a href="contact.html" className="nav-item nav-link">
+                  <Link href="contact.html" className="nav-item nav-link">
                     Contact
-                  </a>
+                  </Link>
                 </div>
                 <div className="navbar-nav ml-auto py-0">
-                  <a href="" className="nav-item nav-link">
+                  <Link href="" className="nav-item nav-link">
                     Login
-                  </a>
-                  <a href="" className="nav-item nav-link">
+                  </Link>
+                  <Link href="" className="nav-item nav-link">
                     Register
-                  </a>
+                  </Link>
                 </div>
               </div>
             </nav>
