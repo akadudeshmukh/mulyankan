@@ -7,6 +7,8 @@ import { imageData } from "@/data/brandTile-data";
 import { BrandTile } from "@/components/PageComponents/BrandTile";
 import Carousel from "@/components/PageComponents/Carousel";
 import Link from "next/link";
+import FeaturedCards from "@/components/PageComponents/FeaturedCards";
+import CategoryTiles from "@/components/PageComponents/CategoryTiles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +16,8 @@ export default function Home() {
   return (
     <Layout title="Home-Barbarik">
       <Carousel />
+      <FeaturedCards />
+      <CategoryTiles />
       {/* Image Carousel */}
       {/* Feature Cards */}
       {/* Category Tiles */}
