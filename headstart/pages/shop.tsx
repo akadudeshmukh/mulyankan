@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Shop() {
   return (
     <>
-      <Layout title="Home-Barbarik">
+      <Layout title="Shop-Barbarik">
         {/* Breadcrumb */}
         {/* Filters */}
         <Filters />
