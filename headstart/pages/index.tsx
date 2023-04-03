@@ -26,7 +26,7 @@ export default function Home() {
     <TrandyProductsPost></TrandyProductsPost>
     <Subscription title="Stay Updated" desc="Amet lorem at rebum amet dolores. Elitr lorem dolor sed amet diam labore at justo ipsum eirmod duo labore labore."></Subscription>
     {/* Brand Tiles */}
-    <BrandTile data={imageData} />
+    {/* <BrandTile data={imageData} /> */}
   </Layout>
   );
 }
